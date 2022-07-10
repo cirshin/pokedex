@@ -73,8 +73,7 @@ a {
 }
 h1,
 h2,
-h3,
-h4 {
+h3 {
   letter-spacing: var(--spacing);
   text-transform: capitalize;
   line-height: 1.25;
@@ -136,7 +135,7 @@ p {
 
 /*
 =============== 
-Reviews
+Entries
 ===============
 */
 main {
@@ -183,21 +182,8 @@ main {
   display: block;
   height: 100%;
   object-fit: cover;
-  border-radius: 50%;
+  /* border-radius: 50%; */
   position: relative;
-}
-.quote-icon {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 2.5rem;
-  height: 2.5rem;
-  display: grid;
-  place-items: center;
-  border-radius: 50%;
-  transform: translateY(25%);
-  background: var(--clr-primary-5);
-  color: var(--clr-white);
 }
 .img-container::before {
   content: '';
@@ -209,17 +195,8 @@ main {
   right: -0.5rem;
   border-radius: 50%;
 }
-.author {
+.pokemon-name {
   margin-bottom: 0.25rem;
-}
-.job {
-  margin-bottom: 0.5rem;
-  text-transform: uppercase;
-  color: var(--clr-primary-5);
-  font-size: 0.85rem;
-}
-.info {
-  margin-bottom: 0.75rem;
 }
 .prev-btn,
 .next-btn {
@@ -249,4 +226,7 @@ main {
 .random-btn:hover {
   background: var(--clr-primary-5);
   color: var(--clr-primary-1);
+}
+.type-text {
+  color: var(--clr-grey-6)
 }
